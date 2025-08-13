@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoFlow - Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <div class="container">
+            <!-- Header -->
+            <header class="header">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 11l3 3L22 4"></path>
+                            <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path>
+                        </svg>
+                    </div>
+                    <h1>TodoFlow</h1>
+                </div>
+                <p class="subtitle">Organize your life, one task at a time</p>
+            </header>
+
+            <!-- Todo Form -->
+            <form class="todo-form" id="todoForm">
+                <div class="input-container">
+                    <input 
+                        type="text" 
+                        id="todoInput" 
+                        placeholder="What needs to be done?"
+                        class="todo-input"
+                        autocomplete="off"
+                    >
+                    <button type="submit" class="add-btn" id="addBtn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+
+            <!-- Todo List -->
+            <div class="todo-list" id="todoList">
+                <div class="empty-state" id="emptyState">
+                    <div class="empty-icon">✨</div>
+                    <h3>All clear!</h3>
+                    <p>You have no tasks. Time to add some!</p>
+                </div>
+            </div>
+
+            <!-- Filters -->
+            <div class="filters" id="filters" style="display: none;">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">
+                        All <span class="count" id="allCount">0</span>
+                    </button>
+                    <button class="filter-btn" data-filter="active">
+                        Active <span class="count" id="activeCount">0</span>
+                    </button>
+                    <button class="filter-btn" data-filter="completed">
+                        Completed <span class="count" id="completedCount">0</span>
+                    </button>
+                </div>
+                <div class="filter-actions">
+                    <span class="items-left" id="itemsLeft">0 items left</span>
+                    <button class="clear-completed" id="clearCompleted" style="display: none;">
+                        Clear completed
+                    </button>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+  <p>&copy; 2025 Todo List. All rights reserved.</p>
+</footer>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -35,10 +35,17 @@ The **ToDo List** is a simple, modern, and responsive task management applicatio
    npm install
 3. Run the Application
     ```bash
-      npm run dev
+    npm run dev
 4. Open your browser and visit:
    ```bash
-     http://localhost:5173/
+   http://localhost:5173/
 
-## Screenshots
+## 📸 Screenshots
 
+# Home Page – Task List View
+
+![image alt](https://github.com/Sainath-K-tech/To-Do-List/blob/f7527657e5a3e8f6692d941703f0b72ab8fa2ce0/Screenshot%202025-08-13%20072131.png)
+
+# Add New Task and Completed Tasks
+
+![image alt](https://github.com/Sainath-K-tech/To-Do-List/blob/f7527657e5a3e8f6692d941703f0b72ab8fa2ce0/Screenshot%202025-08-13%20072245.png)

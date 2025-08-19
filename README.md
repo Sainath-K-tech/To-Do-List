@@ -34,6 +34,11 @@ The **ToDo List** is a simple, modern, and responsive task management applicatio
    ```bash
    npm install
 3. Run the Application
-  ```bash
-   npm run dev
+    ```bash
+      npm run dev
+4. Open your browser and visit:
+   ```bash
+     http://localhost:5173/
+
+## Screenshots
 
